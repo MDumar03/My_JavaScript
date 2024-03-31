@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate.prctice</title>
+  <style>
+
+
+   </style>
+</head>
+<body>
+     <div id="main-container">  
+       <label>Product :</label>
+       <input type="text" placeholder="Enter Product name"    name="">
+       <br><br>
+
+       <label>Rate :</label>
+       <input type="text" placeholder="Rate" name="" id="Rate">
+       <br><br>
+       
+       <label>Qty :</label>
+       <input type="text" placeholder="Qty"  name=""  id="Qty">
+       <br><br>
+
+       <label>Gross :</label>
+       <input type="text" placeholder="Gross" name=""  id="Gross">
+       <br><br>
+
+       <label>Discount :</label>
+       <input type="text" placeholder="Discount"  name=""   id="Discount">
+       <br><br>
+
+       <label>Total :</label>
+       <input type="text" placeholder="Total" name=""  id="Total" >
+       <br><br>
+
+        
+         <button  id="btn" onclick="calculate()">Calculate</button>
+         
+    
+  </div> 
+     
+    <script type="text/javascript">
+      
+      window.alert("hello");
+      
+      
+      function calculate()
+        {
+         
+        var rate = document.getElementById("Rate").value; 
+        var qty = document.getElementById("Qty").value;
+        var dis =document.getElementById("Discount").value;
+        
+        
+        var sum= parseInt(rate)*parseInt(qty);
+
+        document.getElementById("Gross").value=sum;
+        document.getElementById("Total").value = sum -dis;
+        }
+      
+    </script>   
+</body>
+</html>

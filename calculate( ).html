@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculation( ).practice</title>
+ <style>
+ *{
+  margin: 0px;
+  padding: 0px;
+ 
+ }
+  body{
+background-color: bisque;
+
+
+  }  
+
+
+ 
+  
+
+#main-container{
+   max-width: 450px;
+   margin: 0px auto;
+   padding: 20px;
+   background-color: aliceblue;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight:bolder;   
+   
+
+
+   margin-top: 200px;
+   border-radius: 20px;
+
+}
+ button{
+background-color:gray;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+padding: 5px;
+position: relative;
+left: 15px;
+
+}
+
+#Rate{
+position: relative;
+left:14px ;
+
+
+}
+
+#Qty{
+position: relative;
+left:2px;
+
+}
+
+#Gross{
+position: relative;
+left: 9px;
+
+
+}
+#Discount{
+position: relative;
+right: 3px;
+
+}
+#Total{
+position: relative;
+left: 13px;
+
+
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+
+<body>
+   
+  <div id="main-container"> 
+   
+   <label>Product :</label>
+   <input type="text" placeholder="Enter Product name" name="">
+   <br><br>
+
+   <label>Rate :</label>
+   <input type="text" id="Rate" name="">
+   <br><br>
+
+   <label> Quantity:</label>
+   <input type="text" id="Qty" name="">
+   <br><br>
+
+   <label>Gross :</label>
+   <input type="text" id="Gross" name="">
+   <br><br>
+
+   <label>Discount :</label>
+   <input type="text" id="Discount" name="">
+   <br><br>
+
+   <label>Total :</label>
+   <input type="text" id="Total" name="">
+   <br><br>
+	  
+   <button onclick="calculate()" id="btn">CALCULATE</button>
+      
+  </div>
+    <script>  
+      // window.alert("WEllcome");
+             
+      
+     function calculate()
+     {
+
+     var rate=document.getElementById("Rate").value;
+     var qty=document.getElementById("Qty").value;
+     var dis=document.getElementById("Discount").value;
+
+     var sum=parseInt(rate)*parseInt(qty);
+
+
+     document.getElementById("Gross").value=sum;
+     document.getElementById("Total").value=sum-dis;
+
+
+
+
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    </script>
+</body>
+</html>

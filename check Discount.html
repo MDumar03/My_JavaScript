@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#container{
+max-width: 430px;
+margin: 0px auto;
+padding: 15px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+background: rgb(53, 52, 52);
+margin-top: 50px;
+border-radius: 15px;
+color: bisque;
+}
+#btn{
+padding:5px;
+border-radius: 10px;
+color:black;
+background-color:bisque;
+font-family: Arial, Helvetica, sans-serif;
+}
+#qq{
+position: relative;
+left: 8px;
+
+
+}
+#rr{
+position: relative;
+right: 30px;
+
+}
+
+   </style>
+</head>
+<body>
+  
+  
+  <div id="container">
+  
+    <label>Name :</label>
+    <input type="text" placeholder="Enter Your Name" id="name" name="">
+    <br><br>
+      
+    <div id="qq">
+    <label>Age :</label>
+    <input type="text" placeholder="Enter Your Age" id="Age" name="">
+   </div>
+
+
+    <br>
+      
+    <div id="rr">
+    <label>Your Discount :</label>
+     <input type="text" id="Discount">
+     </div>
+     <br><br>
+
+     <button id="btn" onclick="AGE()" >Check  Your Discount</button>
+
+
+
+    </div>
+
+
+
+
+
+   <script type="text/javascript">
+        function AGE(){
+
+         var ages=document.getElementById("Age").value;
+         
+           var sum = parseInt(ages) ;
+         document.getElementById("Discount").value=sum;
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+           if(ages>=50)
+              document.write("40% Discount");
+     
+
+         else if(ages>=40)
+              document.write("30% Discount");
+     
+     
+             else  if(ages>=30)
+            document.write("25% Discount");
+        
+        
+          else if(ages<30)
+              document.write("NO Discount");
+
+          
+
+        }
+
+
+
+
+
+
+     </script>
+</body>
+</html>

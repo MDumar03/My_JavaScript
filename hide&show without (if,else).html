@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>without.practice</title>
+<style>
+  *{
+   margin: 0px;
+   padding: 0px;
+
+  }
+body{
+background-color: white;
+
+
+
+}
+
+  #up{
+  max-width: 600px;
+  margin: 0px auto;
+   
+  text-align: center;
+  
+}
+
+#up p{
+ font-family: Arial, Helvetica, sans-serif;   
+}
+
+
+
+  #container{
+
+    max-width: 600px;
+  margin: 0px auto;
+   
+  text-align: center;
+  background-color:;
+  padding: 15px;
+  font-family: arial;
+}
+ 
+  #down{
+    max-width: 600px;
+  margin: 0px auto;
+   
+  text-align: center;
+
+
+  } 
+#id{
+
+padding: 10px;
+border-top:1px solid gray ;
+border-bottom: 1px solid gray;
+
+}
+#pass{
+border-bottom: 1px solid gray;
+padding-bottom: 8px;
+}
+
+
+#up{
+ font-family:sans-serif;  
+ background-color:;
+ margin-top: 100px;
+padding: 15px;
+}
+ 
+
+  a:link{
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(18, 149, 210);
+ }
+ a:visited{
+  text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(18, 149, 210); 
+
+
+}
+
+
+a:hover{
+  text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color:gray;
+
+
+}
+
+a:active{
+  text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(18, 149, 210);
+
+}
+
+
+#root{
+position: relative;
+right: 21px;
+
+
+
+}
+#main-container{
+  max-width: 650px;
+  margin: 0px auto;
+   padding: 20px;
+background-color:;
+
+  margin-top: 10px;
+}
+#back{
+color:rgb(18, 149, 210) ;
+font-family:Arial, Helvetica, sans-serif ;
+display: inline;
+
+}
+#next{
+float: right;  
+color:rgb(18, 149, 210)  ;
+font-family: Arial, Helvetica, sans-serif;
+display: inline;
+}
+
+</style>
+
+
+</head>
+<body>
+   
+  <div id="main-container">
+      
+    
+    
+    
+    
+    <div id="strting">  
+        <div id="back"> <a href="#"> < Back  </a> </div>
+        <div id="next"><a href="#"> Next </a></div>
+    </div> 
+      
+      
+      
+      
+       <div id="up">
+        <h1>Apple ID</h1>
+        <br>
+        <p>Sign up with Apple ID to use iCloud, iTunes,</p> <p id=""> The App Store and keep Privacy.</p>
+    </div>
+    <br><br>
+   
+    
+    <div id="container">    
+        
+     <div id="id">  
+       
+    <div id="root">  <label>Apple ID :</label>
+         <input type="text" name=""> 
+    </div>
+        </div> 
+         <br>
+         
+         <div id="pass">
+        <label>Password :</label>
+        <input type="password" placeholder="Enter Your Password "  id="password">
+        <button id="btn1" onclick="show()" name="">SHOW</button>
+        <button id="btn2" onclick="hide()" name=""  style="display:none ;">HIDE</button>   
+         </div>
+    
+    </div>   
+      
+
+    <br><br>
+    <div id="down">
+        <p><a href="#">Don't have an Apple ID or forget it?</a></p>
+    </div>    
+  
+   </div>
+    
+    <script type="text/javascript">
+ 
+
+ function show()
+     {
+     document.getElementById("password").type="text";
+     document.getElementById("btn2").style.display="inline-block";
+     document.getElementById("btn1").style.display="none";
+     }
+  
+   function  hide()
+    
+   {
+    document.getElementById("password").type="password";
+     document.getElementById("btn2").style.display="none";
+     document.getElementById("btn1").style.display="inline-block";
+   }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
